@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Practik_work_10_Starov.task1
+namespace Word13
 {
     internal class Manager : Employee
     {
@@ -14,7 +14,7 @@ namespace Practik_work_10_Starov.task1
 
         public void Meeting()
         {
-            Console.WriteLine($"Проводится собрание, кол-во людей - {size_command}");
+            Console.WriteLine($"Проводится собрание, количество людей - {size_command}");
         }
     }
 }
