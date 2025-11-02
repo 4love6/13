@@ -8,13 +8,13 @@ namespace Word13
 {
     internal class Manager : Employee
     {
-        private int size_command;
+        private int team_size;
 
-        public int SizeCommand { get { return size_command; } }
+        public int TeamSize { get { return team_size; } }
 
         public void Meeting()
         {
-            Console.WriteLine($"Проводится собрание, количество людей - {size_command}");
+            Console.WriteLine($"Проводится собрание, количество людей - {team_size}");
         }
     }
 }
