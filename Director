@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Word13
+{
+    internal class Director : Employee
+    {
+        private string dept;
+
+        public string Dept { get { return dept; } }
+
+        public void Budget()
+        {
+            Console.WriteLine($"Директор удтверждает бюджет в отделе {dept}");
+        }
+    }
+}
