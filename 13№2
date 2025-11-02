@@ -1,1 +1,91 @@
+BankAccount:
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Word13_2
+{
+    internal class BankAccount
+    {
+        private int id_count; private int balance; private string owner;
+
+        public int IdCount {  get { return id_count; } }
+        public int Balance { get { return balance; } }
+        public string Owner { get { return owner; } }
+    }
+}
+#################################################################################
+CheckingAccount:
+
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Word13_2
+{
+    internal class CheckingAccount : BankAccount
+    {
+        private int limite;
+
+        public int Limite {  get { return limite; } }
+
+        public void Check()
+        {
+            Console.WriteLine($"Ваш лимит овердтафта - {limite}");
+        }
+    }
+}
+#####################################################################################
+SavingAccount:
+
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Word13_2
+{
+    internal class SavingAccount : BankAccount
+    {
+        private string name_count; private int percent;
+
+        public string NameCount {  get { return name_count; } }
+        public int Percent { get { return percent; } }
+
+        public void Save()
+        {
+            Console.WriteLine($"Ваши деньги переводятся на ваш накопительный счет {name_count} с {percent} процентом");
+        }
+    }
+}
+######################################################################################
+CreditAccount:
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Practik_work_10_Starov.task2
+{
+    internal class CreditAccount : BankAccount
+    {
+        private double limite; private string data;
+
+        public double Limite { get { return limite; } }
+        public string Data { get { return data; } }
+
+        public void Credit()
+        {
+            Console.WriteLine($"Ваш лимит на кредит - {limite}, срок для его погашения - {data}");
+        }
+    }
+}
+#############################################################################################
