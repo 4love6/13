@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Word13_3
+    internal class Audiobook
+    {
+        private string time; private string speaker;
+
+        public string Time {  get { return time; } }
+        public string Speaker { get { return speaker; } }
+
+        public void I_Audio()
+        {
+            Console.WriteLine($"Аудиокнига была озвучена {speaker}, имеет длительность {time}");
+        }
+    }
+}
