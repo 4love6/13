@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Word13_3
+{
+    internal class DVD : LibraryItem
+    {
+        private string time; private double rating;
+
+        public string Time {  get { return time; } }
+        public double Rating { get { return rating; } }
+
+        public void id_DVD()
+        {
+            Console.WriteLine($"Данное видео с продолжительностью {time} имеет рейтинг - {rating}");
+        }
+    }
+}
