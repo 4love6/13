@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Practik_work_10_Starov.task1
+namespace Word13
 {
     internal class Developer : Employee
     {
